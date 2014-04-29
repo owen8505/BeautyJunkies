@@ -1,0 +1,30 @@
+Digital Theme
+http://www.wpzoom.com/themes/digital
+ 
+CHANGELOG
+---------
+
+v 1.0.2 (October 25, 2013)
+
+	- Fixed a bug with the slider in portfolio posts, not showing first image.
+	- modified files:
+		- footer.php
+		- single-portfolio.php
+		
+
+v 1.0.1 (June 14, 2013)
+
+	- Fixed Twitter Widget (added compatibility with API version 1.1)
+	- Fixed incorrect width for Facebook Like Box widget
+	- modified files:
+		- /functions/theme/widgets/twitter.php
+		- style.css
+	
+	- added files:
+		- /functions/theme/widgets/twitteroauth/OAuth.php
+		- /functions/theme/widgets/twitteroauth/twitterauth.php
+
+
+v 1.0 (May 31, 2013)
+
+	- Initial Release

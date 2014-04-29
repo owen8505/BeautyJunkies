@@ -1,0 +1,241 @@
+/******************************************  
+ CUSTOM STYLESHEET
+*******************************************/
+
+/*
+* You can place your custom CSS statements in this file, after this message.
+* It is better to write everything custom here
+* because this file won't be replaced during updates.
+* 
+* Simply copy an existing style from style.css to this file, 
+* and modify it to your liking.
+*/
+
+.buscador{
+	position: absolute;
+	bottom: 0px;
+	right: 16%;
+	overflow: hidden;
+}
+
+.buscador input{
+	border: solid 1px #ccc;
+	padding: 5px;
+	width: 300px;
+}
+
+.categorias{
+	text-align: center;
+	font-size: medium;
+	font-weight: bold;
+}
+.custom-menu-button{
+	width: 100%;
+}
+
+.custom-logo {
+	background-image: url('images/logos/logo.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 495px;
+	height: 146px;
+	display: inline-block;
+	margin-left: 5%;
+}
+
+.custom-titulo {
+	background-image: url('images/logos/social.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 495px;
+	height: 146px;
+	display: inline-block;
+	float: right;
+}
+
+.dropdown a{
+	padding: 0;
+}
+
+.dropdown li {
+	border: solid 1px #ccc;
+	margin-top: -1px;
+}
+
+.dropdown li ul li{
+	background-color: white;
+	text-align: center;
+}
+
+.dropdown li ul li a {
+	font-size: smaller;
+}
+
+.post-thumb > a > img {
+	width: 100%;
+	height: auto;
+}
+
+.sub-menu{
+	padding: 0;
+	margin-left: -1px;
+}
+
+
+#content{
+	padding: 0px;
+	position: absolute;
+	background-color: #f0efef;
+}
+
+#custom-heading {
+	background-color: #FFF;
+	padding: 0px;
+	position: relative;
+}
+
+#footer {
+	text-align: left;
+	position: static;
+	background-image: url('images/logos/footer.png');
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 190px;
+	background-size: contain;
+}
+
+#footer .copyright{
+	width: 100%;
+	text-align: center;
+	font-size: smaller;
+	text-align: center;
+}
+
+#footer p{
+	float: left;
+	margin-top: 48px;
+	margin-left: 10%
+}
+
+#heading{
+	overflow: hidden;
+}
+
+#header{
+	padding: 0px;
+	top: 140px;
+	position: static;
+	float: left;
+	background-color: #f0efef;
+}
+
+#heading{
+	display: none;
+}
+
+#recentposts > ul li {
+	border: solid 1px #ccc;
+	padding: 5px;
+	width: 27%;
+}
+
+#recentposts > ul li h2 a {
+	color: #F783A0;
+}
+
+#recentposts > ul li h2 a:hover {
+	color: #F783A0;
+}
+
+#recentposts > ul li .meta a{
+	color: #F783A0;
+}
+
+#recentposts > ul li .meta a:hover{
+	color: #F783A0;
+}
+
+#menu{
+	width: 197px;
+	margin-top: 1px;
+}
+
+
+/******************************************  
+* Media Queries (Responsive Design)
+*******************************************/
+
+@media screen and (max-width: 1255px) {
+
+	#content { padding:0; }
+
+	#recentposts > ul { margin-left: -3%; }
+	#recentposts > ul li { width: 27%; margin: 0 0 30px 3%; }
+	#recentposts > ul li .post-thumb img { max-width: 100%; height: auto; }
+}
+
+
+@media screen and (max-width: 1080px) {
+
+	#header { padding-top: 0; }
+	
+	.buscador input{
+		width: 250px;
+	}
+
+	.custom-logo, .custom-titulo{ 
+		width: 357px;
+		height: 106px;
+	}
+	
+}
+
+@media screen and (max-width: 960px) {
+
+	.custom-logo, .custom-titulo{ 
+		width: 342px;
+		height: 102px;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+
+	.buscador{ display: none;}
+
+	.custom-logo, .custom-titulo{ 
+		width: 240px;
+		height: 72px;	
+	}
+
+	#content{
+		padding-left: 10%;
+	}
+
+	#recentposts > ul li { width: 40% }
+
+	#header { position: relative; width: 100%; padding: 0; top:0; }
+
+  	.btn_menu {position: absolute; top:30px; right: 10px; display: block; background: url("images/menu.png") no-repeat; width: 39px; height: 40px; margin: 10px 10px 10px 0; }
+
+}
+
+
+@media screen and (max-width: 640px) {
+
+	.custom-logo{ 
+		width: 240px;
+		height: 72px;	
+	}
+
+	.custom-titulo{
+		display: none;
+	}
+
+	.custom-header{
+		text-align: center;
+	}
+
+	#header { position: relative; width: 100%; padding:0; }
+
+}
