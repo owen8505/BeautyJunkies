@@ -11,17 +11,33 @@
 * and modify it to your liking.
 */
 
+.boton-red-social {
+	display: inline;
+	width: 28px;
+	height: 28px;
+}
+.boton-red-social a {
+	width: 28px;
+	height: 28px;
+}
+
+.boton-red-social a img {
+	width: 28px;
+	height: 28px;
+}
+
 .buscador{
 	position: absolute;
 	bottom: 0px;
-	right: 16%;
+	right: 6%;
 	overflow: hidden;
 }
 
-.buscador input{
+.buscador input[type="text"]{
 	border: solid 1px #ccc;
 	padding: 5px;
 	width: 300px;
+	background-color: #f0efef
 }
 
 .categorias{
@@ -36,7 +52,8 @@
 .custom-logo {
 	background-image: url('images/logos/logo.png');
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
+	background-position-y: -110px;
 	width: 495px;
 	height: 146px;
 	display: inline-block;
@@ -44,11 +61,11 @@
 }
 
 .custom-titulo {
-	background-image: url('images/logos/social.png');
+	background-image: url('images/logos/social-fondo.png');
 	background-repeat: no-repeat;
-	background-size: contain;
-	width: 495px;
-	height: 146px;
+	background-size: cover;
+	width: 325px;
+	height: 116px;
 	display: inline-block;
 	float: right;
 }
@@ -71,9 +88,32 @@
 	font-size: smaller;
 }
 
-.post-thumb > a > img {
+.imagen_principal{
 	width: 100%;
-	height: auto;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.post-thumb > a > img {
+	height: 200px;
+	width: 300px;
+	resize: both;
+}
+
+.post_content{
+	width: 100%;
+}
+
+.redes-sociales {
+	display: block;
+	width: 145px;
+	position: absolute;
+	right: 6%;
+	top: 35%;
+}
+
+.single-post #content {
+	width: 70%;
 }
 
 .sub-menu{
@@ -81,11 +121,19 @@
 	margin-left: -1px;
 }
 
+.titulo{
+	color: #f783a0;
+	font-weight: bolder;
+	font-size: xx-large;
+	text-align: justify;
+}
+
 
 #content{
 	padding: 0px;
 	position: absolute;
 	background-color: #f0efef;
+	padding-top: 20px;
 }
 
 #custom-heading {

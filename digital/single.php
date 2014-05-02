@@ -32,7 +32,11 @@
 		<?php wp_reset_query(); if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<div class="entry">
-		
+
+			<div class="imagen_principal"><?php the_post_thumbnail(array(700, 300)); ?></div>
+
+			<div class="titulo"><?php the_title(); ?></div>
+
 			<?php the_content(); ?>
 		
 			<?php wp_link_pages(array('before' => '<p class="pages"><strong>'.__('Pages', 'wpzoom').':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>

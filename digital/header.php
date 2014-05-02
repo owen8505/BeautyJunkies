@@ -28,8 +28,13 @@
 			</div>
 			<a class="btn_menu" id="toggle-top" href="#"></a>
 
-			<div class="buscador"> <input type="text" /> </div>
-
+			<div class="buscador"> <input type="text" placeholder="Search here..." /> </div>
+<div class="redes-sociales">
+	<div class="boton-red-social"><a href="#"><img src="http://localhost/wordpress/wp-content/themes/digital/images/logos/icon-pinterest.png"></a></div>
+	<div class="boton-red-social"><a href="#"><img src="http://localhost/wordpress/wp-content/themes/digital/images/logos/icon-facebook.png"></a></div>
+	<div class="boton-red-social"><a href="#"><img src="http://localhost/wordpress/wp-content/themes/digital/images/logos/icon-instagram.png"></a></div>
+	<div class="boton-red-social"><a href="#"><img src="http://localhost/wordpress/wp-content/themes/digital/images/logos/icon-twitter.png"></a></div>
+</div>
 		</div><!-- / #custom-heading -->
 
         <div id="header">
@@ -71,19 +76,6 @@
 						) );
 				} ?>
 				<!--div class="lateral-menu-button">
-					<a href="#">
-						<img style="width:100px; heigth:50px;" src="http://rs.xango.com/images/xango4.0/recognition/pins/500k.jpg">
-					</a>
-				</div>
-				<div class="lateral-menu-button">
-					<a href="#">
-						<img style="width:100px; heigth:50px;" src="http://rs.xango.com/images/xango4.0/recognition/pins/200k.jpg">
-					</a>
-				</div>
-				<div class="lateral-menu-button">
-					<a href="#">
-						<img style="width:100px; heigth:50px;" src="http://rs.xango.com/images/xango4.0/recognition/pins/100k.jpg">
-					</a>
 				</div-->
 			</div>
 

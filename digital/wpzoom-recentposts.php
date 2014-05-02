@@ -39,7 +39,7 @@
 					<div class="meta">
 						<?php echo substr(get_the_content(), 0, 100)."..."; ?>
 						<p><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">>>> READ MORE</a></p>
-						<div class="categorias"><?php if (option::get('recent_posts_category') == 'on') {?><span><?php the_category(', '); ?></span><?php } ?></div>
+						<!--div class="categorias"><?php if (option::get('recent_posts_category') == 'on') {?><span><?php the_category(', '); ?></span><?php } ?></div-->
 
 					</div>
 				</div>
