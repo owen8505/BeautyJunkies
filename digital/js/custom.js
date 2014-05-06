@@ -9,6 +9,7 @@ jQuery(function($){
 	 $('#toggle-top').click(function() {
         $('#menu').slideToggle(400);
         $('#content').slideToggle(2);
+        $('#heading').slideToggle(2);
         $(this).toggleClass("active");
  
         return false;

@@ -1,5 +1,5 @@
 <div id="recentposts">
-	<!--h2 class="section_title">
+	<h2 class="section_title">
 		<?php
 			if (is_home()) {
 				if (option::get('recent_posts_title') != '') {
@@ -9,7 +9,7 @@
 				}
 			}
 		?>
-	</h2-->
+	</h2>
 
 	<div class="clear"></div>
 

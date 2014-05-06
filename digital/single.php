@@ -8,7 +8,7 @@
 	}
 	?>
  
-	<h2><?php the_title(); ?></h2>
+	<!--h2><?php the_title(); ?></h2>
 
 	<div class="meta">
 		<?php if (option::get('post_date') == 'on') { ?><span><?php printf( __('%s at %s', 'wpzoom'),  get_the_date(), get_the_time()); ?></span><?php } ?> 
@@ -18,7 +18,7 @@
  		<?php if (option::get('post_category') == 'on') { ?><span><?php _e('in', 'wpzoom'); ?> <?php the_category(', '); ?></span><?php } ?>
 
  		<?php edit_post_link( __('Edit', 'wpzoom'), '<span>', '</span>' ); ?>
-	</div>
+	</div-->
 
  
 	<div class="clear">&nbsp;</div>

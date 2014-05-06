@@ -108,8 +108,12 @@
 	display: block;
 	width: 145px;
 	position: absolute;
-	right: 6%;
+	right: 7%;
 	top: 35%;
+}
+
+.redes-sociales-mobile{
+	display: none;
 }
 
 .single-post #content {
@@ -166,10 +170,6 @@
 	margin-left: 10%
 }
 
-#heading{
-	overflow: hidden;
-}
-
 #header{
 	padding: 0px;
 	top: 140px;
@@ -179,7 +179,8 @@
 }
 
 #heading{
-	display: none;
+	/*display: none;*/
+	overflow:hidden;
 }
 
 #recentposts > ul li {
@@ -233,8 +234,16 @@
 	}
 
 	.custom-logo, .custom-titulo{ 
-		width: 357px;
 		height: 106px;
+	}
+
+	.custom-logo{
+		width: 317px;
+		background-position-y: -60px;
+	}
+
+	.custom-titulo{
+		width: 297px;
 	}
 	
 }
@@ -242,8 +251,20 @@
 @media screen and (max-width: 960px) {
 
 	.custom-logo, .custom-titulo{ 
-		width: 342px;
 		height: 102px;
+	}
+
+	.custom-logo{
+		width: 332px;
+		background-position-y: -70px;
+	}
+
+	.custom-titulo{
+		width: 297px;
+	}
+
+	.redes-sociales{
+		right: 8.5%;
 	}
 }
 
@@ -253,8 +274,24 @@
 	.buscador{ display: none;}
 
 	.custom-logo, .custom-titulo{ 
-		width: 240px;
+		width: 200px;
 		height: 72px;	
+	}
+
+	.custom-logo{
+		background-position-y: -40px;
+	}
+
+	.redes-sociales{
+		display: none;
+	}
+
+	.redes-sociales-mobile{
+		display: block;
+		width: 62%;
+		margin-top: -1px;
+		border: solid 1px #ccc;
+		padding: 10px 37.5px;
 	}
 
 	#content{
@@ -273,7 +310,7 @@
 @media screen and (max-width: 640px) {
 
 	.custom-logo{ 
-		width: 240px;
+		width: 210px;
 		height: 72px;	
 	}
 
