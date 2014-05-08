@@ -47,7 +47,7 @@ jQuery(window).load(function($) {
 var wpz_isHome = <?php echo is_home() ? 'true' : 'false'; ?>;
 
 </script>
-
+<script type="text/javascript" src="wp-content/themes/digital/js/animaciones-menu.js"></script>
  
 <?php wp_footer(); ?>
 </body>
