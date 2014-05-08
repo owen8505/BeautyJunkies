@@ -32,7 +32,7 @@ custom.css and it will override the style in this file.
 	.slides li .content { width:48%; margin-left:2%;  }
 	.slides li .content h3 { width:60%;  }
 
-	#slider .flex-direction-nav {  right: 0; top: 0; }
+	#slider .flex-direction-nav {  right: 0; bottom: 0; }
 
 	#recentposts > ul { margin-left: -3%; }
 	/*#recentposts > ul li { width: 30%; margin: 0 0 30px 3%; }*/
@@ -71,7 +71,7 @@ custom.css and it will override the style in this file.
 	.slides li .content { width:100%; margin-left:0; margin-top:2%; }
 	.slides li .content h3 { width:80%;  }
 
-	#slider .flex-direction-nav {  right: 0; top:66%; }
+	#slider .flex-direction-nav {  right: 0; bottom: 0; }
 
 	#recentposts > ul li h2 { font-size: 16px; }
 }
@@ -79,7 +79,7 @@ custom.css and it will override the style in this file.
 
 @media screen and (max-width: 768px) {
 
-	#slider .flex-direction-nav {  right: 0; top:66%; }
+	#slider .flex-direction-nav {  right: 0; bottom: 0; }
 	
 	/*#header { position: relative; width: 97%; padding: 15px 0 15px 3%; }*/
 	#footer { display: none; }
@@ -105,7 +105,7 @@ custom.css and it will override the style in this file.
 	#heading h2,
 	#recentposts h2.section_title { font-size: 20px; margin-top: 15px; }
 
-	#slider { margin-top:20px; }
+	#slider { /*margin-top:20px;*/ }
 
 	#content { padding: 3%; }
 
@@ -127,7 +127,7 @@ custom.css and it will override the style in this file.
 	#logo { margin: 0 0 3%; }
 	#main { margin-left:0; }
  	
-	#slider .flex-direction-nav {  right: 0; top:40%; }
+	#slider .flex-direction-nav {  right: 0; bottom: 0; }
 
 	#footer { display: none; }
 

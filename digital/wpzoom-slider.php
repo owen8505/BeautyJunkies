@@ -1,5 +1,5 @@
 <div id="heading">
-	<h2><?php echo option::get('slideshow_title'); ?></h2>
+	<!--h2><?php echo option::get('slideshow_title'); ?></h2-->
 
 	<div id="slider">
 		<ul class="slides">
@@ -17,8 +17,9 @@
 
 					<div class="content">
 						<h3><?php printf( '<a href="%s" title="%s">%s</a>', get_permalink(), the_title_attribute('echo=0'), get_the_title() ); ?></h3>
-						<p class="category"><?php echo get_the_term_list( get_the_ID(), 'skill-type', '', ' / ', '' ); ?></p>
 						<?php the_excerpt(); ?>
+						<p class="read-more-featured"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">>>> READ MORE</a></p>
+						<p class="category"><?php echo get_the_term_list( get_the_ID(), 'skill-type', '', ' / ', '' ); ?></p>
 					</div>
 
 					<br class="clear" />

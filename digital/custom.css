@@ -178,11 +178,6 @@
 	background-color: #f0efef;
 }
 
-#heading{
-	/*display: none;*/
-	overflow:hidden;
-}
-
 #recentposts > ul li {
 	border: solid 1px #ccc;
 	padding: 5px;
@@ -210,6 +205,93 @@
 	margin-top: 1px;
 }
 
+#heading{
+	overflow:hidden;
+	background-color: #F783A0;
+	padding: 10px;
+	width: 90.7%;
+}
+
+#slider{
+	width: 100%;
+	margin: 0;
+}
+
+.slides{
+	width: 100%;
+}
+
+#slider > div > ul > li > .image {
+	width: 49%;
+}
+
+#slider > div > ul > li > .content {
+	color: #FFF;
+	width: 49%;
+	margin-left: 5px;
+
+}
+
+#slider > ul > li > .image {
+	width: 49%;
+}
+
+#slider > ul > li > .content {
+	color: #FFF;
+	width: 49%;
+	margin-left: 5px;
+
+}
+
+#slider .flex-direction-nav{
+	right: 0;
+}
+
+#slider > ul > li > .content p {
+	color: #FFF;
+}
+
+#slider > div > ul > li > .content > h3 {
+	color: #FFF;
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+.slides li .content{
+	width: 40%;
+}
+
+.slides li .content .category, .slides li .content .category a{
+	color: #FFF;
+}
+
+.slides li .content .category {
+	margin-left: 10%;
+}
+
+.slides li .content .category a {
+	/*position: absolute;
+	bottom: 20px;
+	left: 65%;*/
+	font-weight: bold;
+}
+
+.slides li .image{
+	width: 59%;
+}
+
+.slides li .image a img{
+	width: 100%;
+	height: auto;
+}
+
+.read-more-featured a{
+	color: #FDF;
+}
+
+.read-more-featured a:hover {
+	color: #FDF;
+}
 
 /******************************************  
 * Media Queries (Responsive Design)

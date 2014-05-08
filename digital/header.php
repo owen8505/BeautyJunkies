@@ -31,10 +31,10 @@
 			<div class="buscador"> <input type="text" placeholder="Search here..." /> </div>
 			
 			<div class="redes-sociales">
-				<div class="boton-red-social"><a href="#"><img src="http://localhost/wordpress/wp-content/themes/digital/images/logos/icon-pinterest.png"></a></div>
-				<div class="boton-red-social"><a href="#"><img src="http://localhost/wordpress/wp-content/themes/digital/images/logos/icon-facebook.png"></a></div>
-				<div class="boton-red-social"><a href="#"><img src="http://localhost/wordpress/wp-content/themes/digital/images/logos/icon-instagram.png"></a></div>
-				<div class="boton-red-social"><a href="#"><img src="http://localhost/wordpress/wp-content/themes/digital/images/logos/icon-twitter.png"></a></div>
+				<div class="boton-red-social"><a href="#"><img src="wp-content/themes/digital/images/logos/icon-pinterest.png"></a></div>
+				<div class="boton-red-social"><a href="#"><img src="wp-content/themes/digital/images/logos/icon-facebook.png"></a></div>
+				<div class="boton-red-social"><a href="#"><img src="wp-content/themes/digital/images/logos/icon-instagram.png"></a></div>
+				<div class="boton-red-social"><a href="#"><img src="wp-content/themes/digital/images/logos/icon-twitter.png"></a></div>
 			</div>
 		</div><!-- / #custom-heading -->
 
@@ -79,10 +79,10 @@
 				<!--div class="lateral-menu-button">
 				</div-->
 				<div class="redes-sociales-mobile">
-					<div class="boton-red-social"><a href="#"><img src="http://localhost/wordpress/wp-content/themes/digital/images/logos/icon-pinterest.png"></a></div>
-					<div class="boton-red-social"><a href="#"><img src="http://localhost/wordpress/wp-content/themes/digital/images/logos/icon-facebook.png"></a></div>
-					<div class="boton-red-social"><a href="#"><img src="http://localhost/wordpress/wp-content/themes/digital/images/logos/icon-instagram.png"></a></div>
-					<div class="boton-red-social"><a href="#"><img src="http://localhost/wordpress/wp-content/themes/digital/images/logos/icon-twitter.png"></a></div>
+					<div class="boton-red-social"><a href="#"><img src="wp-content/themes/digital/images/logos/icon-pinterest.png"></a></div>
+					<div class="boton-red-social"><a href="#"><img src="wp-content/themes/digital/images/logos/icon-facebook.png"></a></div>
+					<div class="boton-red-social"><a href="#"><img src="wp-content/themes/digital/images/logos/icon-instagram.png"></a></div>
+					<div class="boton-red-social"><a href="#"><img src="wp-content/themes/digital/images/logos/icon-twitter.png"></a></div>
 				</div>
 			</div>
 

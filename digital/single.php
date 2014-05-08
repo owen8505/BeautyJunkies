@@ -33,7 +33,7 @@
 
 		<div class="entry">
 
-			<div class="imagen_principal"><?php the_post_thumbnail(array(700, 300)); ?></div>
+			<!--div class="imagen_principal"><?php the_post_thumbnail(array(700, 300)); ?></div-->
 
 			<div class="titulo"><?php the_title(); ?></div>
 
