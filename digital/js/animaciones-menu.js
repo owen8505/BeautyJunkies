@@ -2,7 +2,7 @@
 var SecuenciaEjecutandose = false
 var SecuenciaID = null 
 var imagen = 5 
-var duracion = 500
+var duracion = 250
 var imagenes; 
 var boton;
 

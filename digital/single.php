@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php get_header(); 
+
+if(has_post_thumbnail()){
+?>
 
 <div id="heading">
 	
@@ -25,7 +28,8 @@
 
 
 </div><!-- / #welcome -->
- 
+<?php } ?>
+
 <div id="content">
 	 
 	<div class="post_content">

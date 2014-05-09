@@ -23,7 +23,7 @@
 
 		<div id="custom-heading">
 			<div class="custom-header">
-				<div class="custom-logo"></div>
+				<a href="<?php echo home_url(); ?>"><div class="custom-logo"></div></a>
 				<div class="custom-titulo"></div>
 			</div>
 			<a class="btn_menu" id="toggle-top" href="#"></a>
