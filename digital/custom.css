@@ -11,6 +11,38 @@
 * and modify it to your liking.
 */
 
+/*
+*
+* Fuentes
+*
+*/
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('fonts/ProximaNovaRegular.woff') format('woff'),
+	url('fonts/ProximaNovaRegular.eot') format('eot'),
+	url('fonts/ProximaNovaRegular.ttf')  format('truetype');
+}
+
+@font-face {
+	font-family: 'ProximaNovaBold';
+	src: url('fonts/ProximaNovaBold.woff') format('woff'),
+	url('fonts/ProximaNovaBold.eot') format('eot'),
+	url('fonts/ProximaNovaBold.ttf')  format('truetype');
+}
+
+@font-face {
+	font-family: 'StRydeRegular';
+	src: url('fonts/StRydeRegular.woff') format('woff'),
+	url('fonts/StRydeRegular.eot') format('eot'),
+	url('fonts/StRydeRegular.ttf')  format('truetype');
+}
+
+body{
+	font-family: 'StRydeRegular';
+}
+
+
 .boton-red-social {
 	display: inline;
 	width: 28px;
@@ -127,8 +159,8 @@
 
 .titulo{
 	color: #f783a0;
-	font-weight: bolder;
-	font-size: xx-large;
+	font-family: 'ProximaNovaBold';
+	font-size: 24pt;
 	text-align: justify;
 }
 
@@ -186,14 +218,22 @@
 
 #recentposts > ul li h2 a {
 	color: #F783A0;
+	font-family: 'ProximaNovaBold';
+	font-size: 24pt;
 }
 
 #recentposts > ul li h2 a:hover {
 	color: #F783A0;
 }
 
+#recentposts > ul li .meta{
+	font-family: 'StRydeRegular';
+	font-size: 18pt;
+}
+
 #recentposts > ul li .meta a{
 	color: #F783A0;
+	font-size: 14pt;
 }
 
 #recentposts > ul li .meta a:hover{
@@ -249,12 +289,26 @@
 
 #slider > ul > li > .content p {
 	color: #FFF;
+	font-family: 'StRydeRegular';
+	font-size: 28pt;
+}
+
+#slider > div > ul > li > .content p {
+	color: #FFF;
+	font-family: 'StRydeRegular';
+	font-size: 18pt;
 }
 
 #slider > div > ul > li > .content > h3 {
 	color: #FFF;
-	font-size: xx-large;
-	font-weight: bold;
+	font-family: 'ProximaNovaBold';
+	font-size: 24pt;
+}
+
+#slider > ul > li > .content > h3 {
+	color: #FFF;
+	font-family: 'ProximaNovaBold';
+	font-size: 24pt;
 }
 
 .slides li .content{
@@ -287,10 +341,25 @@
 
 .read-more-featured a{
 	color: #FDF;
+	font-size: 14pt;
 }
 
 .read-more-featured a:hover {
 	color: #FDF;
+}
+
+.entry p{
+	font-family: 'StRydeRegular';
+	font-size: 21pt;
+}
+
+.desktop-menu .dropdown li a div {
+	text-align: center;
+}
+
+.desktop-menu .dropdown li a div img{
+	width: 98px;
+	height: 122px;
 }
 
 /******************************************  

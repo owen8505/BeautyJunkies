@@ -388,7 +388,7 @@ p {margin: 0 0 16px; }
 .dropdown li ul { width: 100%; position: relative; }
 .dropdown li ul li { float: none; width: 100%; }
 .dropdown li ul li a { display: block; }
-.dropdown .item-with-ul { background-image: url('images/arrow-down.png'); background-repeat: no-repeat; background-position: 93% 18px; }
+.dropdown .item-with-ul { background-image: url('images/arrow-down.png'); background-repeat: no-repeat; background-position: 93% 40px; }
 .sub-menu { display: none; padding-left: 15px; }
 .sub-menu li a {font-size: 14px;}
 .sub-menu.open { display: block; }

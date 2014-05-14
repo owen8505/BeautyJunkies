@@ -1,6 +1,6 @@
 <?php get_header(); 
 
-if(has_post_thumbnail()){
+/*if(has_post_thumbnail()){
 ?>
 
 <div id="heading">
@@ -28,7 +28,7 @@ if(has_post_thumbnail()){
 
 
 </div><!-- / #welcome -->
-<?php } ?>
+<?php } */ ?>
 
 <div id="content">
 	 
@@ -37,7 +37,7 @@ if(has_post_thumbnail()){
 
 		<div class="entry">
 
-			<!--div class="imagen_principal"><?php the_post_thumbnail(array(700, 300)); ?></div-->
+			<div class="imagen_principal"><?php the_post_thumbnail(array(700, 300)); ?></div>
 
 			<div class="titulo"><?php the_title(); ?></div>
 
