@@ -54,7 +54,7 @@
 				<?php if (option::get('logo_desc') == 'on') {  ?><p id="tagline"><?php bloginfo('description'); ?></p><?php } ?>
 			</div--><!-- / #logo -->
 			
-            <div id="menu">
+            <!--div id="menum">
             	<ul id="main-menu" class="dropdown">
             		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children item-with-ul top-level"><a href="#">Home</a></li>
             		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children item-with-ul top-level"><a href="#">About</a></li>
@@ -62,9 +62,9 @@
             		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children item-with-ul top-level"><a href="#">Blog</a></li>
             		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children item-with-ul top-level"><a href="#">Shortcodes</a></li>
             	</ul>
-            </div>
+            </div-->
 
-			<div class="desktop-menu">
+			<div id="menu" class="desktop-menu">
 				<?php //dynamic_sidebar('Sidebar'); ?>
 				<?php if (has_nav_menu( 'primary' )) {  
 
@@ -72,7 +72,7 @@
 						'container_class' => 'menu-header', 
 						'theme_location' => 'primary',
 						'container' => '', 
-						'menu_class' => 'dropdown', 
+						'menu_class' => 'navigation', 
  						'menu_id' => 'main-menu', 
 						'sort_column' => 'menu_order', 
 						'walker' => new Page_Navigation_Walker,

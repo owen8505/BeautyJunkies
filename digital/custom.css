@@ -128,7 +128,7 @@ body{
 
 .post-thumb > a > img {
 	height: 200px;
-	width: 300px;
+	width: 100%;
 	resize: both;
 }
 
@@ -186,7 +186,7 @@ body{
 	width: 200px;
 	height: 190px;
 	background-size: contain;
-	margin-top: -51px;
+	margin-top: -1px;
 }
 
 #footer .copyright{
@@ -358,8 +358,25 @@ body{
 }
 
 .desktop-menu .dropdown li a div img{
-	width: 98px;
-	height: 122px;
+	width: 68px;
+	height: 92px;
+
+}
+
+.dropdown li a span {
+	float: left;
+	margin-top: 40px;
+	margin-left: 10px;
+	font-size: 11pt;
+	width: 78px;
+}
+
+#menu{
+	display: none;
+}
+
+.desktop-menu{
+	display: block;
 }
 
 /******************************************  
@@ -454,6 +471,15 @@ body{
 	#header { position: relative; width: 100%; padding: 0; top:0; }
 
   	.btn_menu {position: absolute; top:30px; right: 10px; display: block; background: url("images/menu.png") no-repeat; width: 39px; height: 40px; margin: 10px 10px 10px 0; }
+
+  	#menu{
+  		display: none;
+  		width: 100%;
+  	}
+
+  	.desktop-menu{
+  		display: none;
+  	}
 
 }
 

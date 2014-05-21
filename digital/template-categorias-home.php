@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Categorias Home
+Template Name: Home Categorias
 */
 ?>
 
@@ -22,6 +22,15 @@ $titulo = ucfirst($categoria);
 				<?php wp_list_categories(array('title_li' => '', 'hierarchical' => false, 'taxonomy' => 'skill-type', 'style' => 'custom', 'current_category' => $taxonomy_obj->term_id, 'walker' => new Walker_Category_Filter())); ?>
 			</p>
 		<?php } */?>
+
+		<?php //if (option::get('portfolio_tags') == 'on') {
+			$id = get_cat_ID($categoria);
+		 ?>
+			<p id="portfolio-tags" class="iso-sort" >
+				<a class="all active" data-value="*" href="#"><?php _e('All', 'wpzoom'); ?></a>
+				<?php wp_list_categories(array('title_li' => '', 'hierarchical' => false, 'taxonomy' => 'category', 'child_of' => $id, 'style' => 'custom', 'walker' => new Walker_Category_Filter())); ?>
+			</p>
+		<?php //} ?>
   
 		<div class="clear"></div>
  
@@ -29,7 +38,7 @@ $titulo = ucfirst($categoria);
 </div>
 <br/>
 
-<div id="recentposts">
+<div id="portfolio">
 
 <?php
 
@@ -37,12 +46,13 @@ $titulo = ucfirst($categoria);
 	//$query->query( 'posts_per_page=' . option::get('recent_posts_items') );
 	if ($query->have_posts()) : ?>
 
- 
-	<ul>
+<div id="recentposts">
+	<ul id="portfolio-items">
 
 		<?php while ($query->have_posts()) : $query->the_post(); ?>
 
-			<li>
+			<?php $terms = get_the_terms( get_the_ID(), 'category' );?>
+			<li class="<?php foreach ($terms as $term) { echo 'tag-' . strtolower(preg_replace('/\s+/', '-', $term->name)). ' '; } ?>">
 
 				<?php if (option::get('index_thumb') == 'on') {
 
@@ -68,7 +78,7 @@ $titulo = ucfirst($categoria);
 		<?php endwhile; ?>
 
 	</ul>
-
+</div>
 	<?php endif; wp_reset_query(); ?>
 
 <div class="clear"></div>

@@ -4,7 +4,7 @@
 	<div id="slider">
 		<ul class="slides">
 	 
-			<?php $loop = new WP_Query( array( 'post_type' => 'portfolio', 'posts_per_page' => option::get('featured_posts_posts'), 'meta_key' => 'wpzoom_is_featured', 'meta_value' => 1 ) ); ?>
+			<?php $loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => option::get('post'), 'meta_key' => 'wpcf-featured', 'meta_value' => 1 ) ); ?>
 
 			<?php while ( $loop->have_posts() ) : $loop->the_post();  ?>
 

@@ -31,6 +31,7 @@ function CreaArray(n) {
 
 function DetenerSecuencia () { 
 	if( SecuenciaEjecutandose ) 
+		document.getElementById(boton+'_txt').innerHTML = '';
 	clearTimeout(SecuenciaID) 
 	SecuenciaEjecutandose = false 
 	imagen = 0 
@@ -54,6 +55,8 @@ function setBoton(botonId){
 
 function IniciarSecuencia (botonId) { 
 	setBoton(botonId)
+	mayus = boton.substring(0, 1);
+	document.getElementById(boton+'_txt').innerHTML = mayus.toUpperCase()+boton.substring(1);
 	DetenerSecuencia() 
 	imagen = 1 
 	MostrarSecuencia() 
