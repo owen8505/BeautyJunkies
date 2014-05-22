@@ -9,7 +9,7 @@
 				<a class="all active" data-value="<?php echo is_home() ? ':nth-child(-n+6)' : '*'; ?>" href="#"><?php _e('All', 'wpzoom'); ?></a>
 				<?php wp_list_categories(array('title_li' => '', 'hierarchical' => false, 'taxonomy' => 'skill-type', 'style' => 'custom', 'walker' => new Walker_Category_Filter())); ?>
 			</p>
-		<?php } ?>z
+		<?php } ?>
  
 		<div class="clear"></div>
  
