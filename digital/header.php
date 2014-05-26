@@ -23,12 +23,15 @@
 
 		<div id="custom-heading">
 			<div class="custom-header">
-				<a href="<?php echo home_url(); ?>"><div class="custom-logo"></div></a>
-				<div class="custom-titulo"></div>
+            	<div class="custom-logo">
+                <a href="<?php echo home_url(); ?>">
+            		<img src="wp-content/themes/digital/images/logos/img-logo.png" alt="Inicio BeautyJunkies">
+	            </a>
+              </div>              	           	               			
 			</div>
 			<a class="btn_menu" id="toggle-top" href="#"></a>
 
-			<div class="buscador"> <input type="text" placeholder="Search here..." /> </div>
+			<div class="search"> <input type="text" placeholder="Search here" /> </div>
 			
 			<div class="redes-sociales">
 				<div class="boton-red-social"><a href="http://www.pinterest.com/hildelisab/"><img src="wp-content/themes/digital/images/logos/icon-pinterest.png"></a></div>
@@ -36,9 +39,10 @@
 				<div class="boton-red-social"><a href="http://instagram.com/hildelisab"><img src="wp-content/themes/digital/images/logos/icon-instagram.png"></a></div>
 				<div class="boton-red-social"><a href="https://twitter.com/BeautyJunkiesMX"><img src="wp-content/themes/digital/images/logos/icon-twitter.png"></a></div>
 			</div>
-		</div><!-- / #custom-heading -->
-
-        <div id="header">
+		</div><!-- / #custom-heading -->        
+		
+	   <div id="main">
+       	<div id="header">
 		 
 			<!--div id="logo">
 				<?php if (!option::get('misc_logo_path')) { echo "<h1>"; } ?>
@@ -54,42 +58,34 @@
 				<?php if (option::get('logo_desc') == 'on') {  ?><p id="tagline"><?php bloginfo('description'); ?></p><?php } ?>
 			</div--><!-- / #logo -->
 			
-            <!--div id="menum">
-            	<ul id="main-menu" class="dropdown">
-            		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children item-with-ul top-level"><a href="#">Home</a></li>
-            		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children item-with-ul top-level"><a href="#">About</a></li>
-            		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children item-with-ul top-level"><a href="#">Portfolio</a></li>
-            		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children item-with-ul top-level"><a href="#">Blog</a></li>
-            		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children item-with-ul top-level"><a href="#">Shortcodes</a></li>
-            	</ul>
+            
+            <!--div id="menu">
+				
             </div-->
 
 			<div id="menu" class="desktop-menu">
-				<?php //dynamic_sidebar('Sidebar'); ?>
-				<?php if (has_nav_menu( 'primary' )) {  
+            
+            	<?php $items = wp_get_nav_menu_items( $menu, $args ); echo $items ?> 
+              <?php if (has_nav_menu( 'primary' )) {  
 
 					wp_nav_menu( array( 
 						'container_class' => 'menu-header', 
 						'theme_location' => 'primary',
 						'container' => '', 
 						'menu_class' => 'navigation', 
- 						'menu_id' => 'main-menu', 
 						'sort_column' => 'menu_order', 
 						'walker' => new Page_Navigation_Walker,
 						'theme_location' => 'primary' 
 
 						) );
-				} ?>
-				<!--div class="lateral-menu-button">
-				</div-->
-				<div class="redes-sociales-mobile">
+				} ?>			
+			</div>
+			<div class="redes-sociales-mobile">
 					<div class="boton-red-social"><a href="#"><img src="wp-content/themes/digital/images/logos/icon-pinterest.png"></a></div>
 					<div class="boton-red-social"><a href="#"><img src="wp-content/themes/digital/images/logos/icon-facebook.png"></a></div>
 					<div class="boton-red-social"><a href="#"><img src="wp-content/themes/digital/images/logos/icon-instagram.png"></a></div>
 					<div class="boton-red-social"><a href="#"><img src="wp-content/themes/digital/images/logos/icon-twitter.png"></a></div>
 				</div>
-			</div>
-
              
             <div class="clear"></div>
 
@@ -104,5 +100,3 @@
 
              
         </div><!-- / #header-->
-		
-	   <div id="main">

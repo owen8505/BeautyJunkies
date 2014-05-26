@@ -35,37 +35,37 @@ jQuery(function($){
     $(window).resize(function() {
         mobileadjust();
     });
+	
+	$folioitems = $('#recentposts #category-items');
 
-
-
-	$folioitems = $('#portfolio #portfolio-items');
-
-	$folioitems.imagesLoaded(function(){
+	$folioitems.imagesLoaded(function(){	
 		$folioitems.isotope({
  			itemSelector : 'li',
- 			filter: ( wpz_isHome ? ':nth-child(-n+6)' : '*' )
 		});
 	});
-
-	if($('#portfolio-tags a.active').length <= 0) $('#portfolio-tags a[data-value="*"]').addClass('active');
+	
 
 	$('#portfolio-tags.iso-sort a').click(function(){
+		//console.log($folioitems)
 		var selector = $(this).attr('data-value');
 		$('#portfolio-tags a').removeClass('active');
-		$(this).addClass('active');
+		$(this).addClass('active');	
 		$folioitems.isotope({ filter: selector });
 		return false;
 	});
 
+/*
+	
+
 	if(typeof wpz_currPage != 'undefined' && wpz_currPage < wpz_maxPages) {
-		if($('#portfolio-items').length > 0) {
-			$('#portfolio-items').after('<a id="load-more" href="#">Load More&hellip;</a>');
+		if($('#catergory-items').length > 0) {
+			$('#catergory-items').after('<a id="load-more" href="#">Load More&hellip;</a>');
 			$('#load-more').click(function(){
 				if(wpz_currPage < wpz_maxPages) {
 					$(this).text('Loading...');
 					wpz_currPage++;
 					$.get(wpz_pagingURL + wpz_currPage + '/', function(data){
-						$newItems = $('#portfolio-items li', data);
+						$newItems = $('#catergory-items li', data);
 						$newItems.imagesLoaded(function(){
 							$folioitems.isotope('insert', $newItems);
 						});
@@ -103,11 +103,28 @@ jQuery(function($){
 				return false;
 			});
 		}
-	}
-
+	}*/
 	 
 	$('#menu a').on('click', function(e){ e.stopPropagation(); });
 
+});
+
+jQuery(function ($){ 
+	$(document).ready(function(){
+		$('.sub-menu').css('display', 'block');
+		$('.sub-menu').addClass('iso-sort');
+		$('.sub-menu').attr('id', 'portfolio-tags');
+		$('#portfolio-tags li a:first-child').remove();
+
+		$('#portfolio-tags.iso-sort li a').click(function(){
+			//console.log($folioitems)
+			var selector = $(this).attr('data-value');
+			$('#portfolio-tags a').removeClass('active');
+			$(this).addClass('active');	
+			$folioitems.isotope({ filter: selector });
+			return false;
+		});
+	});
 });
 
 // jScroll 1.1 - William Duffy - http://www.wduffy.co.uk/jScroll
