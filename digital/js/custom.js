@@ -112,8 +112,6 @@ jQuery(function ($){
 	$(document).ready(function(){
 		$('.sub-menu').css('display', 'block');
 		$('.sub-menu').addClass('iso-sort');
-		$('.sub-menu').attr('id', 'portfolio-tags');
-		$('#portfolio-tags li a:first-child').remove();
 
 		var sub = GetURLParameter('sub');
 		if(sub){
@@ -121,18 +119,15 @@ jQuery(function ($){
 		}
 
 		$('#portfolio-tags.iso-sort li a').click(function(){
-			//console.log($folioitems)
 			var selector = $(this).attr('data-value');
 			var parent = $(this).attr('parent');
 			var categoria = GetURLParameter('categoria');
 			var page_id = GetURLParameter('page_id');
 			if (parent != categoria) {
-				console.log(parent);
-				console.log(categoria);
 				window.location.href = '?page_id='+page_id+'&categoria='+parent+'&sub='+selector ;
 			}else{
-				$('#portfolio-tags a').removeClass('active');
-				$(this).addClass('active');	
+				$('.iso-sort a').removeClass('active');
+				$(this).addClass('active');
 				$folioitems.isotope({ filter: selector });
 			};
 			return false;
