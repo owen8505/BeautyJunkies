@@ -110,15 +110,13 @@ jQuery(function($){
 
 jQuery(function ($){ 
 	$(document).ready(function(){
-		$('.sub-menu').css('display', 'block');
-		$('.sub-menu').addClass('iso-sort');
 
 		var sub = GetURLParameter('sub');
 		if(sub){
 			$folioitems.isotope({ filter: sub });
 		}
 
-		$('#portfolio-tags.iso-sort li a').click(function(){
+		$('.iso-sort li a').click(function(){
 			var selector = $(this).attr('data-value');
 			var parent = $(this).attr('parent');
 			var categoria = GetURLParameter('categoria');

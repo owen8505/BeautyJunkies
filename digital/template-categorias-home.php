@@ -32,10 +32,29 @@ $titulo = ucfirst($categoria);
 
 <?php
 
-	$query = new WP_Query('category_name='.$categoria);
-	//$query->query( 'posts_per_page=' . option::get('recent_posts_items') );
-	if ($query->have_posts()) : ?>
+	global $wp_query;
+	global $paged;
 
+	wp_reset_query();
+	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+	$posts_per_page = 5;
+
+
+	$args = array(
+		'category_name' => $categoria,
+		'paged' => $paged,
+		'posts_per_page' => $posts_per_page,
+		);
+
+	$wp_query = new WP_Query($args);
+	$query = $wp_query;
+
+	if ($query->have_posts()) : ?>
+	<script type="text/javascript">
+		var wpz_currPage = <?php echo $paged; ?>,
+		    wpz_maxPages = <?php echo $wp_query->max_num_pages; ?>,
+		    wpz_pagingURL = '<?php the_permalink(); ?>page/';
+	</script>
  
 	<ul id="category-items">
 
@@ -67,7 +86,7 @@ $titulo = ucfirst($categoria);
 		<?php endwhile; ?>
 
 	</ul>
-
+	<?php get_template_part( 'pagination'); ?>
 	<?php endif; wp_reset_query(); ?>
 
 <div class="clear"></div>
